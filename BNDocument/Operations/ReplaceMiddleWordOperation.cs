@@ -1,10 +1,6 @@
 ﻿using BNDocument.Interfaces;
 using Microsoft.Office.Interop.Word;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BNDocument.Operations
 {
@@ -23,7 +19,7 @@ namespace BNDocument.Operations
 
                     Paragraph currentParagraph = document.Paragraphs[i];
 
-                    ReplaceFirstWord(currentParagraph.Range, middleWord);
+                    ReplaceWord(currentParagraph.Range, middleWord);
                 }
             }
         }
@@ -38,7 +34,7 @@ namespace BNDocument.Operations
             return words[middleIndex];
         }
 
-        private void ReplaceFirstWord(Range range, string replacement)
+        private void ReplaceWord(Range range, string replacement)
         {
             Find find = range.Find;
             find.ClearFormatting();
@@ -48,7 +44,8 @@ namespace BNDocument.Operations
 
             if (found)
             {
-                range.Text = replacement + range.Text.Substring(find.Text.Length);
+                Range middleWordRange = find.Parent;
+                middleWordRange.Text = replacement;
             }
         }
     }
