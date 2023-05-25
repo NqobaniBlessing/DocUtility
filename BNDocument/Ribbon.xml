@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI onLoad="Ribbon_Load" xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+    <ribbon>
+        <tabs>
+            <tab id="testTab" label="Test">
+                <group id="btnGroup" label="Custom Functionality">
+                    <button id="button1" label="First" size="large" />
+                    <button id="button2" label="Second" size="large" />
+                    <button id="button3" label="Third" size="large" />
+                    <button id="button4" label="Fourth" size="large" />
+                </group>
+            </tab>
+        </tabs>
+    </ribbon>
+</customUI>
