@@ -29,6 +29,8 @@ The Word Add-in "DocUtility" is a Microsoft Word specific add-in that allows you
 8. In the Add-ins dialog, click on **Browse** and locate the `BNDocument.dll` file. Click **OK** to add the add-in.
 9. The "DocUtility" add-in will appear in the list. Make sure the checkbox is selected to enable the add-in.
 10. Click **OK** to close the Add-ins dialog.
+11. For computer installation, extract the setup file from the DocUtilty.zip.
+12. Run it and install, then open MS Word and go to the **Test** tab.
 
 ## Usage
 
