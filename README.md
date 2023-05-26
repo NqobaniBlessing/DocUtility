@@ -1,4 +1,4 @@
-# Word Add-in: Middle Word Replacer
+# Word Add-in: DocUtility
 
 The Word Add-in "DocUtility" is a Microsoft Word specific add-in that allows you to manipulate Word contents in specific ways. This add-in is built using C# and VSTO (Visual Studio Tools for Office) technology.
 
